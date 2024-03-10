@@ -1,5 +1,5 @@
-<div>
-    <mat-form-field class="example-full-width">
+<div class="flex flex-row justify-center p-4">
+    <mat-form-field class="pr-8 w-96">
         <mat-label>Ingredient Name</mat-label>
         <input type="text"
                placeholder="Search for..."
@@ -11,8 +11,9 @@
                 <mat-option [value]="ingredient">{{ingredient}}</mat-option>
             }
         </mat-autocomplete>
+        <mat-hint align="start">Text space to use</mat-hint>
     </mat-form-field>
-    <button mat-mini-fab color="primary" (click)="addIngredientToList()">
+    <button class="self-center" mat-mini-fab color="primary" (click)="addIngredientToList()">
         <mat-icon>add</mat-icon>
     </button>
 </div>

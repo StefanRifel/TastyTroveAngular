@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import {IngredientFilterComponent} from "./features/ingredient/component/ingredient-filter/ingredient-filter.component";
-import {IngredientFormItemComponent} from "./features/ingredient/component/ingredient-form/ingredient-form-item.component";
+import {IngredientFormItemComponent} from "./features/ingredient/component/ingredient-form-item/ingredient-form-item.component";
 import {IngredientListComponent} from "./features/ingredient/component/ingredient-list/ingredient-list.component";
 
 @Component({
