@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Install Angular Material
 
 ```ng add @angular/material```
+
+## Color Pallet
+
+https://colorhunt.co/palette/f6f1f1afd3e219a7ce146c94
