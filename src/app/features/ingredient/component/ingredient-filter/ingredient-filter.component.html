@@ -1,1 +1,18 @@
-<p>ingredient-filter works!</p>
+<div>
+    <mat-form-field class="example-full-width">
+        <mat-label>Ingredient Name</mat-label>
+        <input type="text"
+               placeholder="Search for..."
+               matInput
+               [formControl]="ingredientInputControl"
+               [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+            @for (ingredient of filteredIngredients | async; track ingredient) {
+                <mat-option [value]="ingredient">{{ingredient}}</mat-option>
+            }
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-mini-fab color="primary" (click)="addIngredientToList()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

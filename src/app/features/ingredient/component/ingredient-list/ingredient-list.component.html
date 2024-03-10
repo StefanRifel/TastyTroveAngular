@@ -1,1 +1,25 @@
-<p>ingredient-list works!</p>
+<div class="ingredient-list">
+    <mat-list>
+        <h2>Added Ingredients</h2>
+        @for (ingredient of ingredientList; track ingredient) {
+            <mat-list-item>
+                <mat-icon matListItemIcon>menu_book</mat-icon>
+                <div matListItemTitle>
+                    {{ingredient.name}}
+                </div>
+                <div matListItemLine>
+                    <mat-label>kcal {{ingredient.caloriesPerHundredGrams}}</mat-label>
+                    <mat-label>fat {{ingredient.fat}} g</mat-label>
+                    <mat-label>protein {{ingredient.protein}} g</mat-label>
+                    <mat-label>carbohydrate {{ingredient.carbohydrate}} g</mat-label>
+                    <mat-label>sugar {{ingredient.sugar}} g</mat-label>
+                    <mat-label>dietaryFiber {{ingredient.dietaryFiber}} g</mat-label>
+                </div>
+            </mat-list-item>
+        } @empty {
+            <p>
+                No Ingredients added yet
+            </p>
+        }
+    </mat-list>
+</div>
